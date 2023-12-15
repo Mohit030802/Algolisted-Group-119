@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
-
 import { Routes, Route } from "react-router-dom";
 import styled from "styled-components";
-
 import {
   BlogPage,
   AboutUs,
@@ -51,7 +49,6 @@ import InterviewSummaries from './Screen/InterviewSummaries';
 // import ShowdownServer from './Screen/ShowdownServer';
 // import ShowdownServerOpened from './Screen/ShowdownServerOpened';
 
-
 import Development from './Screen/Development';
 import LandingPage3 from './Screen/LandingPage3';
 import ContestArchive from './Screen/ContestArchive';
@@ -62,8 +59,6 @@ import ResumeQuestions from './Screen/ResumeQuestions';
 import ResumeSection from "./Screen/ResumeSection";
 import CoreSubjectsTracker from "./Screen/CoreSubjectsTracker";
 import MockAssessment from "./Screen/MockAssessment";
-
-
 
 const App = ({currentThemeDark}) => {
   const [userGlobal, setUserGlobal] = useState();
