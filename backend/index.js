@@ -6,7 +6,8 @@ const cookieParser = require("cookie-parser");
 const dotenv = require("dotenv");
 dotenv.config();
 const fs = require("fs");
-
+import connectDB from './db/dbConnect.js'
+import User from './db/users.js'
 const morgan = require("morgan");
 require("dotenv").config({
   path: "./config.env",
@@ -40,7 +41,37 @@ app.use("/user-details", require("./Routers/router_user"));
 app.use("/problem-sheets", require("./Routers/router_sheets"));
 app.use("/sheetproblem", require("./Routers/router_problems"));
 app.use("/ai", require("./Routers/ai"));
+// register
+app.post('/register',async(req,res)=>{
+  // console.log(username,password)
+  try {
+      const {username,password}=req.body;
+      const user=new User({username,password})
+      await user.save();
+      res.status(201).json({message:'Registration Successful'})
+  } catch (error) {
+      res.status(500).json({message:'Regsitration Unsuccessful'})
+  }
+})
+// login
 
+app.post('/login',async(req,res)=>{
+  try {
+      const {username,password}=req.body;
+      const user =await User.findOne({username});
+      if(!user){
+          res.status(404).json({message:'User not found'})
+      }
+      if(user.password!==password){
+          res.status(401).json({message:'Incorrect Password'})
+      }
+      res.status(200).json({message:'Login Successful'})
+      
+  } catch (error) {
+      res.status(500).json({message:'Login Unsuccessful'})
+  }
+})
+connectDB();
 const port = process.env.PORT || 8000;
 
 app.listen(port, "0.0.0.0", (err) => {
