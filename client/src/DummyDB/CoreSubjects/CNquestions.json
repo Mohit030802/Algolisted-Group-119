@@ -1,8 +1,176 @@
 [
     {
-        "_id": "25-nov-2023-02'46-@Nayaker",
-        "quesName": "Write Computer Networks Question Here",
-        "answer": "Write Computer Networks Answer Here!",
+        "_id": "23-mar-2024-19'41-@Mohit030802",
+        "quesName": "Define Network?",
+        "answer": "A network refers to a system of interconnected entities, such as computers, devices, or nodes, that communicate and share resources with each other. These connections can be physical, such as through cables or wireless signals, or they can be logical, facilitated by software protocols and standards. Networks can vary widely in scale and complexity, ranging from small local networks within a single building or home to large global networks like the internet. They enable communication, data sharing, resource sharing, and collaboration among connected devices and users. Networks can be classified into different types based on their scope, such as local area networks (LANs), wide area networks (WANs), and metropolitan area networks (MANs), among others.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id": "23-mar-2024-19'41-@Mohit030802",
+        "quesName": "What is a Link?",
+        "answer": "A link in computer networking represents a communication pathway connecting two or more devices within a network, established either physically through mediums like cables or wirelessly through signals. It can be categorized into physical and logical links, with physical links representing the actual transmission medium and logical links facilitating virtual connections. Point-to-point links connect precisely two devices, while multipoint links link more than two. Wireless links utilize wireless signals for communication. Overall, links serve as the foundation for data transmission, enabling devices to communicate, share resources, and collaborate within the network.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What is a Node?",
+        "answer":"In the context of computer networks, a node refers to any device or point of connection within a network that is capable of sending, receiving, or forwarding data. Nodes can vary widely in type and function, including computers, servers, routers, switches, printers, and other network devices. Each node typically has a unique identifier, such as an IP address, which allows it to be addressed and accessed within the network. Nodes can communicate with each other directly or indirectly through intermediate devices, forming the network topology. They play a crucial role in facilitating communication, resource sharing, and data transmission within the network infrastructure.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What is a gateway or Router?",
+        "answer":"A gateway or router is a network device that serves as an entry point between two different networks, facilitating communication between them. Gateways are often used to connect a local area network (LAN) to a wide area network (WAN), such as the internet. Routers specifically function by examining the destination addresses of data packets passing through them and determining the most efficient path for forwarding those packets to their destination. They use routing tables and algorithms to make these decisions, ensuring that data packets reach their intended destinations quickly and efficiently.Gateways, on the other hand, are broader in scope and can perform additional functions beyond routing, such as protocol translation, network address translation (NAT), and firewall services. In many cases, especially in home or small office environments, the term 'gateway' is often used interchangeably with router, as modern routers typically incorporate gateway functionalities.Overall, both gateways and routers play critical roles in enabling communication between different networks and ensuring the efficient flow of data across them.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What are the criteria necessary for an effective and efficient network?",
+        "answer":"An effective and efficient network requires reliability to ensure consistent availability, performance, scalability to accommodate growth without compromising performance, security measures such as encryption and access controls to protect against unauthorized access, manageability through centralized management tools and automated processes for easy maintenance, compatibility and interoperability with existing systems and standards, cost-effectiveness by balancing performance requirements with budget constraints, and flexibility to adapt to changing needs and technologies, ultimately enabling seamless communication, resource sharing, and collaboration while maximizing the network's value and minimizing operational overhead.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What is Protocol?",
+        "answer":"A protocol refers to a set of rules, conventions, or standards that govern how data is transmitted, received, and processed in a communication system or network. Protocols define the format, sequence, timing, and error control mechanisms for exchanging information between devices or entities within a network. They ensure that data communication is reliable, efficient, and interoperable across different systems and platforms. Protocols can operate at various layers of the OSI (Open Systems Interconnection) model, including the physical layer (e.g., Ethernet, Wi-Fi), data link layer (e.g., TCP/IP, UDP), network layer (e.g., IP), transport layer (e.g., TCP, UDP), and application layer (e.g., HTTP, SMTP). Examples of protocols include Transmission Control Protocol (TCP), Internet Protocol (IP), Hypertext Transfer Protocol (HTTP), and Simple Mail Transfer Protocol (SMTP). Overall, protocols play a crucial role in enabling communication and data exchange in computer networks and other communication systems.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What is a Network Topology?",
+        "answer":"A network topology refers to the physical or logical layout of interconnected devices, nodes, or components within a network. It defines how devices are connected and how data flows between them, forming the structure of the network. Network topologies can be classified into various types, such as bus, ring, star, mesh, tree, and hybrid topologies, each with its unique characteristics and advantages. The choice of network topology depends on factors like scalability, fault tolerance, cost, performance, and ease of maintenance. Network topologies play a crucial role in determining the network's reliability, performance, and efficiency, as well as its ability to adapt to changing requirements and technologies.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What is a LAN?",
+        "answer":"A LAN (Local Area Network) is a network that connects devices within a limited geographical area, such as a single building, office, or campus. LANs typically use high-speed communication technologies like Ethernet or Wi-Fi to enable devices to share resources, such as files, printers, and internet access. They are commonly used in homes, small businesses, and educational institutions to facilitate communication, collaboration, and resource sharing among connected devices. LANs can be wired or wireless and can support various network topologies, such as bus, ring, star, or mesh. They are characterized by high data transfer speeds, low latency, and high security, making them ideal for local communication and data sharing.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What is a WAN?",
+        "answer":"A WAN (Wide Area Network) is a network that connects devices over a wide geographical area, such as across cities, countries, or continents. WANs use long-distance communication technologies like leased lines, satellite links, or fiber optics to enable devices to communicate and share resources over long distances. They are commonly used by organizations with multiple locations or remote offices to facilitate communication, data exchange, and collaboration across different sites. WANs can be public or private and can span vast distances, connecting devices across the globe. They are characterized by slower data transfer speeds, higher latency, and lower security compared to LANs, due to the longer distances and multiple network segments involved.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"Define Bandwidth and Latency?",
+        "answer":"Bandwidth refers to the maximum rate of data transfer over a network or communication channel, measured in bits per second (bps), kilobits per second (kbps), megabits per second (Mbps), or gigabits per second (Gbps), representing the volume of data that can be transmitted within a specified timeframe. It signifies the capacity of the network to transmit data efficiently, with higher bandwidth allowing for faster data transmission. On the other hand, latency, also known as delay, is the time it takes for data to travel from the source to the destination in a network. It encompasses various factors such as propagation delay, transmission delay, and processing delay, ultimately influencing the responsiveness and perceived speed of network communication. While bandwidth determines the volume of data that can be transmitted, latency affects the speed and responsiveness of the network, both crucial aspects in assessing the performance and efficiency of a network infrastructure.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"Define Routing?",
+        "answer":"Routing is the process of selecting the optimal path for data packets to travel from a source to a destination in a computer network. It involves determining the most efficient route through which data can be forwarded across interconnected networks or devices, such as routers or switches. Routing decisions are typically based on factors like network topology, available bandwidth, congestion levels, and quality of service requirements. Routing protocols, such as Border Gateway Protocol (BGP), Open Shortest Path First (OSPF), and Routing Information Protocol (RIP), are used to exchange routing information among network devices, enabling them to dynamically update and maintain routing tables. By directing data along the most efficient paths, routing ensures timely delivery and efficient use of network resources, contributing to the overall performance and reliability of the network.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What are the key design issues of a computer Network?",
+        "answer":"Key design issues in a computer network encompass topology determination, scalability planning to accommodate growth, ensuring reliability and redundancy through fault tolerance mechanisms and backup systems, addressing performance requirements through efficient resource allocation and traffic management, security considerations including access control and data encryption, ensuring ease of management and maintenance with centralized management tools and automated processes, adherence to compatibility and interoperability standards, and cost-effectiveness by balancing performance needs with budget constraints, all aimed at creating a robust, efficient, and secure network infrastructure capable of meeting the organization's current and future needs.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What is semantic gap?",
+        "answer":"The semantic gap refers to the disparity or mismatch between the low-level representation of data (such as pixels in an image, or bits in a digital file) and the high-level semantic meaning or concepts that humans associate with that data. In other words, it is the difference in how computers interpret data compared to how humans understand it. Bridging the semantic gap involves developing techniques or systems that enable computers to understand and interpret data in a manner closer to human perception and cognition. This concept is particularly relevant in fields such as computer vision, natural language processing, and information retrieval, where the challenge lies in extracting meaningful information or understanding context from raw data representations. Closing the semantic gap can lead to improvements in various applications, including image recognition, text understanding, and multimedia retrieval.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What is Round Trip Time?",
+        "answer":"Round Trip Time (RTT) is the total time it takes for a packet to travel from a source to a destination and back again. It measures the round-trip delay or latency in a network communication. RTT includes the time it takes for the packet to travel from the source to the destination (known as the one-way latency), as well as the time it takes for the acknowledgment or response packet to travel back from the destination to the source. RTT is typically measured in milliseconds (ms) and is influenced by factors such as the distance between the communicating devices, the speed of the transmission medium, network congestion, and processing delays. It is an important metric in network performance monitoring and troubleshooting, as it directly affects the responsiveness and perceived speed of network communication.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What is Multiplexing?",
+        "answer":"Multiplexing is a technique used in telecommunications and computer networks to enable the transmission of multiple signals or data streams over a single communication channel simultaneously. By sharing the available bandwidth efficiently, multiplexing allows multiple users or devices to transmit and receive data without interfering with each other. Time Division Multiplexing (TDM) divides the transmission channel into time slots, while Frequency Division Multiplexing (FDM) allocates different frequency bands. Other methods like Code Division Multiplexing (CDM) and wavelength division multiplexing (WDM) utilize unique codes or wavelengths, respectively, to separate data streams. Multiplexing optimizes resource utilization, increases transmission efficiency, and enhances network scalability, playing a crucial role in modern communication systems.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What is FDM?",
+        "answer":"Frequency Division Multiplexing (FDM) is a multiplexing technique used in telecommunications and computer networking to combine multiple analog signals or data streams into a single composite signal for transmission over a shared medium. In FDM, the available frequency spectrum of the transmission medium is divided into multiple non-overlapping frequency bands, with each band allocated to a different signal or data stream. Each individual signal occupies a specific frequency band within the spectrum, and these bands are separated to prevent interference between signals. At the receiving end, the composite signal is demultiplexed to extract the original signals, allowing them to be processed separately. FDM is commonly used in applications such as radio broadcasting, cable television, and broadband internet access, where multiple channels or data streams need to be transmitted simultaneously over a shared communication channel.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"List the layers of OSI",
+        "answer":"The OSI (Open Systems Interconnection) model consists of seven layers: 1) Physical Layer, handling physical connections and raw data transmission; 2) Data Link Layer, managing node-to-node communication, error detection, and correction; 3) Network Layer, responsible for routing and forwarding data between different networks; 4) Transport Layer, ensuring reliable end-to-end data delivery, flow control, and error recovery; 5) Session Layer, establishing, managing, and terminating sessions between applications; 6) Presentation Layer, handling data representation, encryption, and compression for application compatibility; and 7) Application Layer, providing interfaces for user applications and network services such as email, file transfer, and web browsing.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What are the concerns of the Physical Layer?",
+        "answer":"The Physical Layer of the OSI model is primarily focused on the transmission of raw data bits over the communication medium, dealing with concerns such as selecting and utilizing appropriate physical media, signal encoding for accurate transmission, determining transmission rates and bandwidth, defining data framing formats, standardizing physical interfaces and connectors, and addressing transmission impairments like attenuation and noise. Its main objective is to establish reliable communication links between devices by ensuring efficient and error-free transmission of data over the underlying physical medium.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What are the responsibilities of Data Link Layer?",
+        "answer":"The Data Link Layer of the OSI model is responsible for facilitating reliable communication between adjacent network nodes by overseeing frame synchronization, error detection and correction using methods like CRC or checksums, managing media access control (MAC) to regulate access to the shared communication medium, assigning unique addresses such as MAC addresses for identification, and implementing flow control mechanisms to manage the pace of data transmission between sender and receiver, ensuring efficient and error-free data exchange within the local network segment.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What are the responsibilities of Network Layer?",
+        "answer":"The Network Layer, positioned third in the OSI model, orchestrates the routing of data packets between different networks, facilitating end-to-end communication across interconnected networks by assigning logical addresses (such as IP addresses) for device identification, determining optimal paths for packet transmission based on network topology and conditions, forwarding packets along selected routes, translating logical addresses into physical addresses for data link layer communication, managing fragmentation and reassembly of packets, implementing Quality of Service (QoS) mechanisms for traffic prioritization, and controlling congestion to ensure efficient and reliable data delivery while maintaining network performance.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What are the functions of Transport Layer?",
+        "answer":"The Transport Layer, fourth in the OSI model, is responsible for establishing end-to-end connections between source and destination devices, ensuring reliable data delivery, managing data flow control to prevent congestion and optimize performance, segmenting and reassembling data packets for efficient transmission, providing error detection and correction through mechanisms like sequence numbers and acknowledgments, multiplexing and demultiplexing data streams to support multiple applications on a single network connection, and implementing connection-oriented or connectionless communication services based on the requirements of the application layer.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What are the responsibilities of Session Layer?",
+        "answer":"The Session Layer, positioned fifth in the OSI model, is responsible for establishing, managing, and terminating communication sessions between applications running on different devices, ensuring synchronized and orderly data exchange by coordinating session setup, maintenance, and teardown processes, managing session checkpoints for fault tolerance and recovery, synchronizing data flow between applications, and providing services for session establishment, maintenance, and termination to support reliable and efficient communication between networked applications.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What are the functions of Presentation Layer?",
+        "answer":"The Presentation Layer, sixth in the OSI model, is responsible for translating, encrypting, and compressing data exchanged between applications to ensure compatibility, security, and efficiency in data transmission, handling data format conversions, character encoding, and data compression to facilitate interoperability between different systems, providing encryption and decryption services to secure data during transmission, and managing data syntax and semantics to enable the interpretation and presentation of data by the application layer.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What are the responsibilities of Application Layer?",
+        "answer":"The Application Layer, the topmost layer of the OSI model, is responsible for providing network services directly to end-users and applications, enabling communication between software applications and network services by defining protocols and standards for data exchange, supporting user authentication, file transfer, email, web browsing, and other application-specific functions, managing user interfaces and data presentation, and facilitating interaction between applications and the underlying network infrastructure to enable seamless communication and data exchange across the network.",
+        "completed": false,
+        "marked": false
+    },
+    {
+        "_id":"23-mar-2024-19'41-@Mohit030802",
+        "quesName":"What is Error Detection? What are its methods?",
+        "answer":"Error detection is a crucial process in data communication aimed at identifying errors that may occur during transmission, reception, or storage of data to ensure data integrity and reliability. Common methods for error detection include Parity Check, which adds a parity bit to ensure even or odd total bits in data units; Checksum, where a checksum value is computed and compared to detect discrepancies; Cyclic Redundancy Check (CRC), a more sophisticated technique generating a cyclic redundancy code for error detection; and Hash Functions, cryptographic techniques producing hash values for error detection. These methods vary in complexity and efficiency, each providing a means to detect errors and ensure the accuracy of transmitted data.",
         "completed": false,
         "marked": false
     }

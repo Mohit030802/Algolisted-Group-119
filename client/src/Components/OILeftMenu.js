@@ -11,7 +11,7 @@ const OILeftMenu = ({ marked }) => {
 
   return (
     <Container>
-      {/* <div className="logo">Atanu Nayak</div> */}
+   
       <Tooltip title="Version - v2.10">
         <div className="logo">Algolisted</div>
       </Tooltip>

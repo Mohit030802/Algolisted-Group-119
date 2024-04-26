@@ -39,7 +39,6 @@ const Auth = () => {
         username: logUserusername,
         password: logUserpassword,
       });
-      // console.log(res.headers["set-cookie"].value)
       const token=res.data.token
       localStorage.setItem('token', token) 
     
@@ -75,9 +74,6 @@ const Auth = () => {
 
     try {
       if (user.password !== user.c_password) {
-        // return alert(
-        //   "Password and Confirm Password are different. Please Enter same password to proceed"
-        // );
         return toast.warning("Please Enter same password to proceed", {
           position: toast.POSITION.TOP_RIGHT,
         });

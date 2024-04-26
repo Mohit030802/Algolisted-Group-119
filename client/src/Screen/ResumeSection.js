@@ -131,7 +131,7 @@ const ResumeSection = () => {
       "Improvement in communication skills and gaining more experience with different programming languages and technologies.",
   });
   const [resultDummy, setResultDummy] = useState(false);
-  const [needDarkMode, setNeedDarkMode] = useState(!false);
+  const [needDarkMode, setNeedDarkMode] = useState(false);
   const openai = new OpenAI({
     apiKey: apiKey,
     dangerouslyAllowBrowser: true,
@@ -174,8 +174,8 @@ const ResumeSection = () => {
 
   useEffect(() => {
     let selectedTheme = localStorage.getItem("selectedTheme");
-    if (selectedTheme === "dark") setNeedDarkMode(true);
-    if (selectedTheme === "light") setNeedDarkMode(false);
+    if (selectedTheme === "dark") setNeedDarkMode(false);
+    if (selectedTheme === "light") setNeedDarkMode(true);
   }, []);
 
   console.log("needDarkMode : ", needDarkMode);
@@ -252,7 +252,7 @@ const ResumeSection = () => {
             },
           ],
           temperature: 0.5,
-          max_tokens: 500,
+          max_tokens: 800,
         });
         const temp = JSON.parse(response.choices[0].message.content);
         // console.log(temp)
@@ -340,7 +340,7 @@ const ResumeSection = () => {
         />
       </MobContainer>
       <Container needDarkMode={needDarkMode}>
-        {needDarkMode ? (
+      {needDarkMode ? (
           <CCHeaderDarkPlus
             needDarkMode={needDarkMode}
             toggleDarkMode={toggleDarkMode}
@@ -356,8 +356,7 @@ const ResumeSection = () => {
         ) : (
           <LeftMenu marked={"resume-questions"} />
         )}
-
-        {/* ---> change this all-blogs to your desired page-id */}
+       
 
         <div className="cc-middle-content">
           <h1 className="main-heading">

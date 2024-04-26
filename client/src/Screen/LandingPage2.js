@@ -15,6 +15,7 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import Fade from 'react-reveal/Fade';
 import {Link} from 'react-scroll';
 import { Link as RouterLink }from 'react-router-dom';
+import GoogleSignInButton from '../Components/GoogleSignInButton';
 
 const LandingPage2 = () => {
   const [contributorsList, setContributorsList] = useState(null);
@@ -33,23 +34,25 @@ const LandingPage2 = () => {
     {
         "name" : "Coding Sheets",
         "desc" : "Looking for a convenient way to access a variety of coding practice sheets from different sources? Look no further than Coding Sheets, a feature on the Algolisted website. Not only can you find a wide range of sheets all in one place, but the included analysis graphs make solving them even more enjoyable by allowing you to track your progress. Happy coding!",
-        "link" : "/coding-sheets/striver-sde-sheet"
+        // "link" : "/coding-sheets/striver-sde-sheet"
+        "link":"/",
     },
     {
         "name" : "Core Subjects Tracker",
         "desc" : "We've compiled a comprehensive set of interview questions sourced from reputable websites such as GeeksforGeeks and InterviewBit. Additionally, we've incorporated core subject knowledge shared by renowned YouTubers like Striver, Fraz, etc. The questions undergo thorough parsing using AI to filter out the most relevant ones, and our AI system provides ideal candidate answers.",
-        "link" : "/selected-profiles"
+        "link" : "/core-subjects-tracker/operating-systems"
     },
     {
       "name": "Resume Based Questions",
       "desc": "Using this feature, once you've uploaded your resume, our AI identifies the specific qualities your target company is looking for and then poses questions that match those company preferences. This encompasses your preparation for non-technical interview rounds, such as HR and project-related discussions.",
       "link": "/resume-questions"
+      // "link":"/",
     },
-    {
-      "name" : "All Internship & Job Opportunities",
-      "desc" : "This page is very similar to the coding competitions list page, here in this page we will provide information about all available hiring and internship opportunities, including the timing of these opportunities. We are currently in the planning stages and will be launching this page soon.",
-      "link" : "/opportunities"
-    },
+    // {
+    //   "name" : "All Internship & Job Opportunities",
+    //   "desc" : "This page is very similar to the coding competitions list page, here in this page we will provide information about all available hiring and internship opportunities, including the timing of these opportunities. We are currently in the planning stages and will be launching this page soon.",
+    //   "link" : "/opportunities"
+    // },
   ]
 
   return (
@@ -115,7 +118,7 @@ const LandingPage2 = () => {
                     </div>
                   </Fade>
               </div>
-              <a href='https://github.com/Nayaker/Algorithmist/' target={"_blank"} className="btn">Start Contributing</a>
+              <a href='https://github.com/vishwas-kr/Algolisted-Group-119/' target={"_blank"} className="btn">Start Contributing</a>
               <h1 className="sub-page-head">Our Contributors</h1>
               <div className="hold-contributors">
                 {
@@ -214,10 +217,15 @@ const LandingPage2 = () => {
             </div>
             <div className="menu-list">
                 
-                <a href='/coding-sheets/striver-sde-sheet' className="item">Coding Sheets</a>
+                {/* <a href='/coding-sheets/striver-sde-sheet' className="item">Coding Sheets</a> */}
+                {/* <a href='/core-subjects-tracker/operating-systems' className="item">Tracker</a> */}
+                {/* <a href='/opportunities' className="item">Opportunities</a> */}
+                <a href='/' className="item">Coding Sheets</a>
                 <a href='/core-subjects-tracker/operating-systems' className="item">Tracker</a>
-                <a href='/resume-questions' className="item">Resume AI</a>
-                <a href='/opportunities' className="item">Opportunities</a>
+                {/* <a href='/' className="item">Resume AI</a> */}
+                <a href='/resume-questions' className="item">Resume AI</a>  
+                <a href='/' className="item">Opportunities</a>
+                {/* <a href="/"><GoogleSignInButton/></a> */}
             </div>
         </Navbar>
         <div className="hero-page">
@@ -313,13 +321,13 @@ const LandingPage2 = () => {
             <div className="contributor"><img src="https://www.styled-components.com/atom.png" alt="" /></div>
             <div className="contributor"><img src="https://openastronomy.org/pyastro/images/pyastro_logo.svg" alt="" /></div>
             <div className="contributor"><img src="https://static.javatpoint.com/tutorial/flask/images/flask-tutorial.png" alt="" /></div>
-            <div className="contributor"><img src="https://play-lh.googleusercontent.com/yMjUC6LBh7uOCK6wUcIEf5MHZQmSqDPXoInOQLZzw0DWQsPJuvkwSymX2zI4Ok7i_BY" alt="" /></div>
-            <div className="contributor"><img src="https://firebase.google.com/static/images/brand-guidelines/logo-logomark.png" alt="" /></div>
-            <div className="contributor"><img src="https://media.licdn.com/dms/image/C4D0BAQFBESIaXqZ9sg/company-logo_200_200/0/1631285887620?e=2147483647&v=beta&t=7U1O5C3TnMlpihufNmmRMaiMawMAwt0ZXE_87JRFFJ4" alt="" /></div>
+            {/* <div className="contributor"><img src="https://play-lh.googleusercontent.com/yMjUC6LBh7uOCK6wUcIEf5MHZQmSqDPXoInOQLZzw0DWQsPJuvkwSymX2zI4Ok7i_BY" alt="" /></div> */}
+            {/* <div className="contributor"><img src="https://firebase.google.com/static/images/brand-guidelines/logo-logomark.png" alt="" /></div> */}
+            {/* <div className="contributor"><img src="https://media.licdn.com/dms/image/C4D0BAQFBESIaXqZ9sg/company-logo_200_200/0/1631285887620?e=2147483647&v=beta&t=7U1O5C3TnMlpihufNmmRMaiMawMAwt0ZXE_87JRFFJ4" alt="" /></div> */}
             <div className="contributor"><img src="https://egw2023.eurac.edu/favicon.ico" alt="" /></div>
-            <div className="contributor"><img src="https://microstream.one/blog/wp-content/uploads/2023/06/redis_logo-1.png" alt="" /></div>
-            <div className="contributor"><img src="https://cdn.iconscout.com/icon/free/png-256/free-aws-3215369-2673787.png" alt="" /></div>
-            <div className="contributor"><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/docker_tile_logo_icon_168248.png" alt="" /></div>
+            {/* <div className="contributor"><img src="https://microstream.one/blog/wp-content/uploads/2023/06/redis_logo-1.png" alt="" /></div> */}
+            {/* <div className="contributor"><img src="https://cdn.iconscout.com/icon/free/png-256/free-aws-3215369-2673787.png" alt="" /></div> */}
+            {/* <div className="contributor"><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/docker_tile_logo_icon_168248.png" alt="" /></div> */}
           </div>
           <div className="sub-page-head">Our Contributors</div>
           <div className="hold-contributors">

@@ -10,7 +10,7 @@ const ContributorWork = () => {
 
   //Fetch the Contributors data
   useEffect(() => {
-    const owner = "vishwas-kr";
+    const owner = "Mohit030802";
     const repo = "Algolisted-Group-119";
   
     axios.get(`https://api.github.com/repos/${owner}/${repo}/contributors`)

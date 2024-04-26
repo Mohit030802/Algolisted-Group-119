@@ -337,12 +337,12 @@ const GrandContainer = styled.div`
           margin-bottom: 50px;
 
           .main-question {
-            color: ${(props) => (props.needDarkMode ? "#e5e5e5" : "#333")};
+            color:#fff;
             font-size: 0.9rem;
             font-weight: 300;
 
             b {
-              color: ${(props) => (props.needDarkMode ? "#e5e5e5" : "#333")};
+              color:#fff;
               font-weight: 600;
             }
 
@@ -363,7 +363,7 @@ const GrandContainer = styled.div`
               margin-top: 10px;
 
               label {
-                color: ${(props) => (props.needDarkMode ? "#e5e5e5" : "#333")};
+                color:#fff;
                 margin-left: 5px;
                 font-size: 0.9rem;
                 font-weight: 300;

@@ -120,7 +120,7 @@ const CCHeaderDarkPlus = ({needDarkMode, toggleDarkMode}) => {
           <Brightness4Icon/>
         </div>
         <div className="icon-box" >
-          <a href='https://github.com/vishwas-kr/Algolisted-Group-119' target={"_blank"}>
+          <a href='https://github.com/Mohit030802/Algolisted-Group-119.git' target={"_blank"}>
             <GitHubIcon/>
           </a>
         </div>

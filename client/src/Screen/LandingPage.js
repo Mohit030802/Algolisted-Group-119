@@ -29,7 +29,7 @@ const LandingPage = () => {
   useEffect(() => {
     axios
       .get(
-        "https://api.github.com/repos/vishwas-kr/Algolisted-Group-119/contributors"
+        "https://api.github.com/repos/Mohit030802/Algolisted-Group-119/contributors"
       )
       .then((res) => {
         setContributorsList(res.data);
@@ -53,7 +53,10 @@ const LandingPage = () => {
 
                   const res = await axios.get('http://localhost:8000/auth/info')
                   setUserInfo(res.data.user[0])
-                  
+                  console.log(res.data.user[0].email)
+                  console.log(res.data.user[0].username)
+                  localStorage.setItem('userEmail', JSON.stringify(res.data.user[0].email))
+                  localStorage.setItem('username', JSON.stringify(res.data.user[0].username))
                   setIsLoggedin(true)
 
               }
@@ -65,16 +68,18 @@ const LandingPage = () => {
   }, [])
   const logout=(e)=>{
     localStorage.removeItem('token')
+    localStorage.removeItem('userEmail')
+    localStorage.removeItem('username')
     setIsLoggedin(false)
   }
-  const tester=JSON.parse(localStorage.getItem('userInfo'))
-  console.log(tester[0].email)
+
+ 
   const modules = [
     {
       name: "Coding Sheets",
       desc: "Looking for a convenient way to access a variety of coding practice sheets from different sources? Look no further than Coding Sheets, a feature on the Algolisted website. Not only can you find a wide range of sheets all in one place, but the included analysis graphs make solving them even more enjoyable by allowing you to track your progress. Happy coding!",
-      // "link" : "/coding-sheets/striver-sde-sheet"
-      link: "/",
+      link : "/coding-sheets/striver-sde-sheet"
+      
     },
     {
       name: "Core Subjects Tracker",
@@ -87,11 +92,11 @@ const LandingPage = () => {
       link: "/resume-questions",
       // "link":"/",
     },
-    // {
-    //   "name" : "All Internship & Job Opportunities",
-    //   "desc" : "This page is very similar to the coding competitions list page, here in this page we will provide information about all available hiring and internship opportunities, including the timing of these opportunities. We are currently in the planning stages and will be launching this page soon.",
-    //   "link" : "/opportunities"
-    // },
+    {
+      "name" : "All Internship & Job Opportunities",
+      "desc" : "This page is very similar to the coding competitions list page, here in this page we will provide information about all available hiring and internship opportunities, including the timing of these opportunities. We are currently in the planning stages and will be launching this page soon.",
+      "link" : "/opportunities"
+    },
   ];
 
   return (
@@ -293,16 +298,20 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="menu-list">
-            <a href="/" className="item">
+            <a href="/coding-sheets/striver-sde-sheet" className="item">
               Coding Sheets
             </a>
+            <a href="/mock-assessment" className="item">
+              Mock Assessment
+            </a>
+
             <a href="/core-subjects-tracker/operating-systems" className="item">
               Tracker
             </a>
             <a href="/resume-questions" className="item">
               Resume AI
             </a>
-            <a href="/" className="item">
+            <a href="/opportunities" className="item">
               Opportunities
             </a>
             <button className="btn">

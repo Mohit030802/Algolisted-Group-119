@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import CCHeader from '../Components/CCHeader'
+
 import LeftMenu from '../Components/LeftMenu'
 
 const OnlineAssessment = () => {
@@ -12,7 +12,7 @@ const OnlineAssessment = () => {
                 <img src="https://media4.giphy.com/media/13FrpeVH09Zrb2/giphy.gif" alt="" />
             </MobContainer>
             <Container>
-                <CCHeader />
+                {/* <CCHeader /> */}
                 <LeftMenu marked={"online-assessment"} />
                 <div className="cc-middle-content">
                     <h1 className='main-heading'>Online Assessment</h1>
