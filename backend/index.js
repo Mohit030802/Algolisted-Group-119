@@ -1,18 +1,20 @@
-const express = require("express");
+import express from 'express';
 const app = express();
-const mongoose = require("mongoose");
-const cors = require("cors");
-const cookieParser = require("cookie-parser");
-const dotenv = require("dotenv");
+import mongoose from 'mongoose';
+import cors from 'cors';
+import cookieParser from 'cookie-parser';
+import dotenv from 'dotenv';
+import fs from 'fs';
+import morgan from 'morgan';
 dotenv.config();
-const fs = require("fs");
+
+import userRouter from './Routers/User.js';
 import connectDB from './db/dbConnect.js'
-import User from './db/users.js'
-import userRouter from './Routes/User.js';
-const morgan = require("morgan");
-require("dotenv").config({
-  path: "./config.env",
-});
+import coreSubjectRouter from './Routers/coreSubjectRouter.js';
+import opportunityRouter from './Routers/opportunites.js';
+import codingSheetRouter from './Routers/codingSheetRouter.js';
+
+
 app.use(cookieParser());
 const corsOptions = {
   origin: "http://localhost:3000",
@@ -32,34 +34,29 @@ app.get("/", (req, res) => {
   res.send("You are using Algolisted APIs. - a Atanu Nayak production");
 });
 app.use('/auth',userRouter);
+app.use('/coreSub',coreSubjectRouter);
+app.use('/opportunity',opportunityRouter);
+app.use('/coding',codingSheetRouter)
 // app.use("/auth", require("./Routers/router_auth"));
-app.use("/resources", require("./Routers/router_resources"));
-app.use("/resumes", require("./Routers/router_resumes"));
-app.use("/coding-sheets", require("./Routers/coding_sheets"));
-app.use("/coding-questions", require("./Routers/coding_questions"));
-app.use("/blog-resources", require("./Routers/router_blog_resources"));
-app.use("/user-details", require("./Routers/router_user"));
-app.use("/problem-sheets", require("./Routers/router_sheets"));
-app.use("/sheetproblem", require("./Routers/router_problems"));
-app.use("/ai", require("./Routers/ai"));
+// app.use("/resources", require("./Routers/router_resources"));
+// app.use("/resumes", require("./Routers/router_resumes"));
+// app.use("/coding-sheets", require("./Routers/coding_sheets"));
+// app.use("/coding-questions", require("./Routers/coding_questions"));
+// app.use("/blog-resources", require("./Routers/router_blog_resources"));
+// app.use("/user-details", require("./Routers/router_user"));
+// app.use("/problem-sheets", require("./Routers/router_sheets"));
+// app.use("/sheetproblem", require("./Routers/router_problems"));
+// app.use("/ai", require("./Routers/ai"));
 
 const port = process.env.PORT || 8000;
-connectDB();
+connectDB()
 app.listen(port, "0.0.0.0", (err) => {
   if (err) {
     console.log("Error in setting up server!");
     return;
   }
   console.log(`App Listening at http://localhost:${port}...`);
-  mongoose
-    .connect(process.env.DATABASE ?? "mongodb://localhost:27017", {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    })
-    .then(() => {
-      console.log("MongoDB Connection Successful !!!");
-    })
-    .catch((err) => console.log(err));
+
 });
 
 // const express = require('express');

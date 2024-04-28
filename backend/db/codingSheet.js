@@ -1,11 +1,10 @@
 import mongoose from "mongoose";
 
 
-const coreSubjectSchema=new mongoose.Schema({
+const codingSheetSchema=new mongoose.Schema({
     id:{
         type:String,
         required:true,
-   
     },
     email:{
         type:String,
@@ -20,7 +19,6 @@ const coreSubjectSchema=new mongoose.Schema({
     
 })
 
+const codingSheet=mongoose.model('codingSheet',codingSheetSchema)
 
-const coreSubject=mongoose.model('coreSubject',coreSubjectSchema)
-
-export default coreSubject;
+export default codingSheet
